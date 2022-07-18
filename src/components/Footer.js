@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Footer = () => {
     return (
         <footer className="ui center aligned container">
-            <h4>Amanda K. Clark Law. <h5>All Rights Reserved</h5></h4>
+            <h4>Amanda K. Clark Law. </h4><h5>All Rights Reserved</h5>
             <div className="ui center aligned container">
                 <Link className='item' to='privacypolicy'>Privacy Policy</Link>
                 ||
