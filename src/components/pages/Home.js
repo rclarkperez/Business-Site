@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Home = () => {
     return (
-        <div>
+        <div className="ui segment">
             <h2 className="ui center aligned container">Attorneys You Can Trust</h2>
             <div className="ui center aligned container">
                 <img 
@@ -11,7 +11,7 @@ const Home = () => {
                 style= {{ maxHeight: '75vh'}}
                 />
             <h3 className="ui center aligned container">Local to Tacoma, WA</h3>
-
+            <br/>
             </div>
             
         </div>

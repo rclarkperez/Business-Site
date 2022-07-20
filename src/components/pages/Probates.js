@@ -28,7 +28,7 @@ const Probates = () => {
                 </p>
                 <h3>Call Us To Discuss Your Case</h3>
                 <p>
-                    While probate, estate and trust matters can be difficult, they don’t have to overwhelm you. If you are in the Vancouver area and you need help with probate or estate and trust administration, call the law office of Amanda K Clark Law today at 555-555-5555. You can also reach us by email.
+                    While probate, estate and trust matters can be difficult, they don’t have to overwhelm you. If you are in the Vancouver area and you need help with probate or estate and trust administration, call the law office of Amanda K Clark Law today at (253)732-3090. You can also reach us by email at wewillfightforyou@email.com.
                 </p>
         </div>
         </div>

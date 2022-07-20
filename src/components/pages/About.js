@@ -12,8 +12,8 @@ const About = () => {
                 />
             </div>
                 <div className="ui segment">
+                    <h4>Background</h4>
                     <p>
-                        <h4>Background</h4>
                         Amanda K. Clark received her law degree from the University of Idaho, College of Law. Prior to her admission to the bar, Amanda was a legal assistant for six years gaining invaluable experience in family and elder law.
 
                         Amanda's law practice focuses on estate planning, probates, and adult guardianships. Amanda represents families seeking protective arrangements for their loved ones, including guardianships and conservatorships. Her clients appreciate her compassionate and practical approach to the law.

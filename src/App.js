@@ -31,8 +31,9 @@ const App = () => {
                     </Routes>
                 <br/>
                 <br/>
-                
+                <div>
                 <Footer/>
+                </div>
                 </div>
             </BrowserRouter>
         </div>

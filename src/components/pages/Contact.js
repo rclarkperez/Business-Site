@@ -16,8 +16,8 @@ const options = [
 
 
 const Contact = () => {
-    const [previousSelected, previousSetSelection] =useState('');
-    const [geoStateSelected, geoStateSetSelection] =useState('');
+    const [previousSelected, previousSetSelection] =useState('Yes');
+    const [geoStateSelected, geoStateSetSelection] =useState('Select a State');
     const [stateSelected, stateSetSelection] =useState(geoStateSelected);
     const [geoCity, cityAssign] =useState('');
     const [inputValue, setValue] =useState('');
@@ -28,6 +28,7 @@ const Contact = () => {
     };
 
     const errorMessage = 'ERROR: You must use a valid phone number'
+    
     const geoLocation = () => {
         const error = async () => {
             loadingToggle(false)
@@ -97,6 +98,7 @@ const Contact = () => {
                 labelString={'State'}
                 selected={stateSelected}
                 setSelection={stateSetSelection}
+                type={'selection'}
                 />
             </div>
             <div className="ui field segment">
@@ -105,6 +107,7 @@ const Contact = () => {
                 labelString={'Are you a new client?'}
                 selected={previousSelected}
                 setSelection={previousSetSelection}
+                type={'selection'}
                 />
             </div>
 

@@ -23,19 +23,18 @@ const Header = () => {
     });
 
     return (
-        <div className="ui secondary pointing menu header floating">
+        <div className="ui secondary pointing menu header floating" style={{ paddingTop: '0%'}}>
             <Link className='item' to='/'><h2>Amanda K. Clark Law</h2></Link>
             <Link className='item' to='/'>Home</Link>
             <Link className='item' to='about'>About</Link>
-            <div className="item" style={{ paddingTop: '2%'}}>
-                    Services
-                    <Dropdown className='item' 
+            <Link className='item' to='contact'>Contact</Link>
+            <div className="item menu" >
+                    <Dropdown 
                     options ={options}
-                    selected ={selected}
                     setSelection ={setSelection}
+                    selected={'Services'}
                 />
             </div>
-            <Link className='item' to='contact'>Contact</Link>
         </div>
     );
 };

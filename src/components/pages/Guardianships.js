@@ -29,7 +29,7 @@ const Guardianships = () => {
                     Whether you are concerned for your own long-term care as you age, or you have a loved one with special needs, there is nothing more important than planning.
 
                     Get The Accessible, Reliable Help You Need
-                    When done correctly, both Medicaid planning and establishing special needs trusts can greatly enhance a person’s quality of life. At Amanda K. Clark Law, our attorneys have been practicing for 45 years combined. We enjoy helping clients protect themselves and their families by providing accurate, clear advice and representation on these matters. Call 555-555-5555 to schedule a consultation with a member of our legal team. You can also reach us by sending the firm an inquiry email.
+                    When done correctly, both Medicaid planning and establishing special needs trusts can greatly enhance a person’s quality of life. At Amanda K. Clark Law, our attorneys have been practicing for 45 years combined. We enjoy helping clients protect themselves and their families by providing accurate, clear advice and representation on these matters. Call (253)732-3090 to schedule a consultation with a member of our legal team. You can also reach us by sending the firm an inquiry email.
                 </p>
             </div>
         </div>
