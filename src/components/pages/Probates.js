@@ -1,14 +1,14 @@
 import React, { useState } from "react";
+import '../../style/PagesStyle/Probates.css';
 
 const Probates = () => {
     return (
         <div>
-            <h2 className="ui center aligned container">Skilled Guidance Through The Probate Process</h2>
+            <div className="ui segment">
+                <h2 className="ui center aligned container">Skilled Guidance Through The Probate Process</h2>
+            </div>
             <div>
-                <img 
-                className="ui segment"
-                src='https://images.unsplash.com/photo-1528752477378-485b46bedcde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80'
-                style= {{ maxHeight: '40vh'}}/>
+                <div id="probates"></div>
             </div>
             <div className="ui segment">
                 <p>

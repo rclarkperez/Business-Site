@@ -1,15 +1,15 @@
 import React, { useState } from "react";
+import '../../style/PagesStyle/Guardianships.css';
 
 const Guardianships = () => {
     return (
         <div>
-            <h2 className="ui center aligned container">Special Needs Trusts And Medicaid Planning</h2>
+            <div className="ui segment">
+                <h2 className="ui center aligned container">Special Needs Trusts And Medicaid Planning</h2>
+            </div>
             <div>
-                <img 
-                className="ui center aligned segment"
-                src='https://images.unsplash.com/photo-1526225294770-079fcbe68745?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80' 
-                style= {{ maxWidth: '80vh'}}
-                />
+                <div id="guardianships"></div> 
+               
             </div>
             <div className="ui segment">
                 <p>

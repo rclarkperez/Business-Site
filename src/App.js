@@ -15,10 +15,11 @@ import history from "./history";
 
 const App = () => {
     return (
-        <div>
+        <div >
+
             <BrowserRouter history={history}>
-                <Header />
-                <div>
+                <Header/>
+                <div >
                     <Routes>
                         <Route exact path='/' exact element={<Home/>}/>
                         <Route exact path='/about' exact element={<About/>}/>
@@ -29,8 +30,7 @@ const App = () => {
                         <Route exact path='/probates' exact element={<Probates/>}/>
                         <Route exact path='/*' exact element={<NotFound/>}/>
                     </Routes>
-                <br/>
-                <br/>
+               
                 <div>
                 <Footer/>
                 </div>
