@@ -15,10 +15,6 @@ import history from "./history";
 
 const App = () => {
     const [loading, loadingToggle] = useState(false);
-
-    useEffect(() =>{
-        
-    })
     return (
         <div >
 
