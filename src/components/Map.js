@@ -1,4 +1,3 @@
-///fix api call so page loads properly with re-render 
 
 const Map = () => {
     const L = window.L;

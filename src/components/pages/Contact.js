@@ -15,13 +15,12 @@ const options = [
 ];
 
 
-const Contact = () => {
+const Contact = ({ loaderToggle }) => {
+    const geoStateSelected  ='Select a State';
     const [previousSelected, previousSetSelection] =useState('Yes');
-    const [geoStateSelected, geoStateSetSelection] =useState('Select a State');
     const [stateSelected, stateSetSelection] =useState(geoStateSelected);
     const [geoCity, cityAssign] =useState('');
     const [inputValue, setValue] =useState('');
-    const [loading, loadingToggle] = useState(false);
 
     const onChange = (e) => {
         setValue(e.target.value);
@@ -31,11 +30,10 @@ const Contact = () => {
     
     const geoLocation = () => {
         const error = async () => {
-            loadingToggle(false)
+            loaderToggle(false)
         }
 
         const success = async (position) => {
-
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
             const baseURL = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
@@ -45,25 +43,21 @@ const Contact = () => {
                 const city = response.data.city
                 cityAssign(city)
                 stateSetSelection(state)
-                loadingToggle(false) 
-        })
+                loaderToggle(false)
+
+        });
         }
-        loadingToggle(true)
+        loaderToggle(true)
 
         window.navigator.geolocation.getCurrentPosition(success, error)
     }
     
     useEffect(()=> {
         geoLocation()
-    }, [geoStateSelected, loadingToggle]);
+    }, []);
 
-    
     return (
         <form className='ui form submit segment' >
-            <div className={`${loading? 'ui active dimmer': ''}`}>
-                <div className={`${loading? 'ui text loader': ''}`}>{loading? 'Loading': ''}
-                </div>
-            </div>
             <h2 className="ui center aligned container">Contact Us</h2>
             
             <div className="ui field segment required">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import '../../style/PagesStyle/About.css';
 
 const About = () => {
@@ -21,12 +21,21 @@ const About = () => {
                 <h4>Education</h4>
                 <p>
                     University of Idaho College of Law, Boise, Idaho
+                    <br/>
                     Honors: Dean’s List
+                    <br/>
+                    <br/>
                     Washington State University, Pullman, Washington
+                    <br/>
                     B.A.
+                    <br/>
                     Honors: cum laude
+                    <br/>
                     Major: Business Administration
+                     <br/>
+                     <br/>
                     Professional Associations
+                    <br/>
                     Thurston County Bar Association Member 2021-Present
                 </p>
             </div>

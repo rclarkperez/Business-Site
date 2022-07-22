@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
-import Map from "./Map"; ///fix api call so page loads properly 
-import {Link} from 'react-router-dom';
+import React, { useEffect } from "react";
+import Map from "./Map"; 
 
 const Footer = () => {
 
-    useEffect(()=>
-        Map()
+    useEffect(()=> {
+        Map() 
+    }
     ,[]);
     
     return (
