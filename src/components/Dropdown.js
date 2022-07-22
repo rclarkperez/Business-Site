@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 
-const Dropdown = ({labelString, options, selected, setSelection, type, selectionLink, geoState}) => {
+const Dropdown = ({labelString, options, selected, setSelection, type, selectionLink, geoState, labelId}) => {
     const [open, setAsOpen] = useState(false);   
 
     
@@ -34,7 +34,7 @@ const Dropdown = ({labelString, options, selected, setSelection, type, selection
                 <div value={selected} onClick={()=>setAsOpen(!open)}
                 className={`ui ${type} dropdown ${open ? 'visible active': ''}`}>
 
-                    <div className="text">{selected}</div>
+                    <div className="text" id={labelId}>{selected}</div>
                     {type? <i className="dropdown icon"></i>: <></>}
                     <div className={`menu ${open ? 'visible transition': ''}`}>
                         {renderOptions}

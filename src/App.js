@@ -1,5 +1,5 @@
 import Header from "./components/Header";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Policy from "./components/pages/PrivacyPolicy";
@@ -14,11 +14,17 @@ import history from "./history";
 
 
 const App = () => {
+    const [loading, loadingToggle] = useState(false);
+
+    useEffect(() =>{
+        
+    })
     return (
         <div >
 
             <BrowserRouter history={history}>
-                <Header/>
+                <Header
+                    />
                 <div >
                     <Routes>
                         <Route exact path='/' exact element={<Home/>}/>
