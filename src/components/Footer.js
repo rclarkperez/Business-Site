@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Map from "./Map"; 
+import '../style/ComponentStyle/Footer.css'
 
 const Footer = () => {
 
@@ -9,7 +10,7 @@ const Footer = () => {
     ,[]);
     
     return (
-        <footer className="ui segment center aligned two column grid">
+        <footer className="ui segment center aligned two column grid" id="footer">
             <div className="column">   
                 <br/>
                 <a href='/' >

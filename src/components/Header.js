@@ -17,16 +17,16 @@ const options = [
 const Header = () => {
     return (
         <div className="ui secondary pointing menu header floating" id="header">
-            <Link className='item' to='/'><h2>Amanda K. Clark Law</h2></Link>
-            <Link className='item' to='/'><label id='labelHeader'>Home</label></Link>
-            <Link className='item' to='about'><label id='labelHeader'>About</label></Link>
-            <div className="ui item" >
+            <Link id='Link' className='item' to='/'><h2>Amanda K. Clark Law</h2></Link>
+            <Link id='Link' className='item' to='/'><label id='labelHeader'>Home</label></Link>
+            <Link id='Link' className='item' to='about'><label id='labelHeader'>About</label></Link>
+            <div id='Link' className="ui item" >
                     <Dropdown 
                     labelId={'labelHeader'}
                     options ={options}
                     selected={'Services'}/>
             </div>
-            <Link className='item' to='contact'><label id="labelHeader">Contact</label></Link>
+            <Link id='Link' className='item' to='contact'><label id="labelHeader">Contact</label></Link>
         </div>
     );
 };

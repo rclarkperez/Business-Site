@@ -17,7 +17,7 @@ const App = () => {
     const [loader, loaderToggle] = useState(false);
 
     return (
-            <div className="ui form">
+            <main className="ui form" id="main" >
                     <div className={`${loader? 'ui active dimmer': ''}`}>
                         <div style={{position:'fixed'}} className={`${loader? 'ui text loader': ''}`}>{loader? <h3>Loading</h3>: ''}
                         </div>
@@ -41,7 +41,7 @@ const App = () => {
                 </div>
                 </div>
             </BrowserRouter>
-        </div>
+        </main>
     );
 };
 

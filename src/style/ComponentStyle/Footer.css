@@ -1,0 +1,9 @@
+@media (max-width:700px) {
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div {
+        flex-basis: 100%;
+    }
+}
