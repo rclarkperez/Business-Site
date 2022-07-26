@@ -20,8 +20,9 @@
     }
     #text-content {
         background-position: center;
-        height: 90vh;
+        height: 100vh;
         padding: 8%;
+        margin-bottom: 15%;
     
     }
 }

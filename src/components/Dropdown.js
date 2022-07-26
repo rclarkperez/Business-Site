@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 
-const Dropdown = ({labelString, options, selected, setSelection, type, labelId}) => {
+const Dropdown = ({labelString, options, selected, setSelection, type, labelId, toggleVisibility}) => {
     const [open, setAsOpen] = useState(false);   
     const ref = useRef();
     
@@ -14,6 +14,8 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId})
     } 
     useEffect(() => {
         document.body.addEventListener("click", onBodyClick, { capture: true });
+                document.body.addEventListener("click", onBodyClick, { capture: true });
+
         return () => {
             document.body.removeEventListener("click", onBodyClick, { capture: true });
         };
@@ -25,6 +27,7 @@ const Dropdown = ({labelString, options, selected, setSelection, type, labelId})
                 <div className="item" 
                 key ={option.label}>
                     <Link className='item' 
+                    onClick={() => {window.matchMedia("(max-width: 700px)").matches? toggleVisibility(false) :toggleVisibility(true) }}
                     to={`${option.label}`}>
                     {option.label}
                     </Link>
