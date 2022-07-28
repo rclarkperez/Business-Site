@@ -5,4 +5,3 @@ React hook system for a custom reusable dropdown component, responsive web desig
 
 Project is still in progress. Additional styling and features will be added at a later time.
 Direct link to deployed prototype on Vercel: https://alenawebsite.vercel.app/
-
