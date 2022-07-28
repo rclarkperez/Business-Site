@@ -87,7 +87,6 @@ const Header = () => {
         mediaMatch()
         window.addEventListener('resize', mediaMatch, { capture: true });
     },[]);
-    console.log(visibility)
     
     return (
         <div className="ui secondary pointing menu header floating" id="header">
